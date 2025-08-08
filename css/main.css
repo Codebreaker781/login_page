@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --var1: "Montserrat";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: url(../src/estadio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #3261C3;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+header > img {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    height: auto;
+    padding-top: 10px;
+
+    position: sticky;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto 40px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main > div > div {
+    margin-bottom: 10px;
+}
+
+div.horario > p {
+    display: inline-block;
+    font-family: var(--var1), Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bolder;
+    background-color: #fff;
+    color: #3261C3;
+    padding: 0 28px;
+    border-radius: 5px;
+
+    position: relative;
+    top: 14px;
+}
+
+div.jogo > img.time-a {
+    position: relative;
+    top: 10px;
+    left: 19px;
+    z-index: 1;
+}
+
+div.jogo > p {
+    display: inline-block;
+    width: 290px;
+    padding: 7px 0px;
+    margin: 10px 0;
+    background-color: #06D2FC;
+    color: #013E71;
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: bolder;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.678);
+
+    position: relative;
+}
+
+div.jogo > img.time-b {
+    position: relative;
+    top: 15px;
+    right: 12px;
+}
+
+div.data > p {
+    display: inline-block;
+    font-family: var(--var1), Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: normal;
+    background-color: #0a1938a1;
+    color: #fff;
+    padding: 3px 34px;
+    border-radius: 0 0 5px 5px;
+
+    position: relative;
+    bottom: 10px;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.952);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin-top: 20px;
+
+    position: relative;
+    top: 295px;
+}
+
+footer a {
+    color: #00aaff;
+    text-decoration: none;
+}
