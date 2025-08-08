@@ -28,7 +28,7 @@ body, html {
 
 body::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -53,9 +53,8 @@ header > img {
 }
 
 main {
-    width: 90%;
-    margin: 0 auto 40px;
-    padding: 20px;
+    width: 100%;
+    margin: 0 auto 40px auto;
     border-radius: 10px;
     text-align: center;
 }
@@ -87,7 +86,7 @@ div.jogo > img.time-a {
 
 div.jogo > p {
     display: inline-block;
-    width: 290px;
+    width: 250px;
     padding: 7px 0px;
     margin: 10px 0;
     background-color: #06D2FC;
@@ -112,7 +111,7 @@ div.data > p {
     font-family: var(--var1), Arial, Helvetica, sans-serif;
     font-size: 0.9em;
     font-weight: normal;
-    background-color: #0a1938a1;
+    background-color: #0a1938c7;
     color: #fff;
     padding: 3px 34px;
     border-radius: 0 0 5px 5px;
@@ -136,4 +135,8 @@ footer {
 footer a {
     color: #006eff;
     text-decoration: none;
+}
+
+footer a:active {
+    color:#004297;
 }
